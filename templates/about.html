@@ -1,0 +1,42 @@
+{% extends "base/base.html" %}
+{% load staticfiles %}
+
+{% block custom_js %}
+  <script src="{% static "js/about.js" %}"></script>
+{% endblock custom_js %}
+
+{% block main_content %}
+  <fieldset>
+    <legend>About this website</legend>
+    <p>Developed on Ubuntu 14.04</p>
+    <p>Wrote by Django 1.8.11</p>
+    <!-- <p>Host on 
+      <a href="https://www.pythonanywhere.com/" target="_blank">
+        PythonAnywhere
+      </a>
+    </p> -->
+    <p>Find source code on 
+      <a href="https://github.com/RobertH-W-Chiang/RobertHWChiang" target="_blank">
+        my GitHub repository
+      </a>
+    </p>
+  </fieldset>
+  <fieldset>
+    <legend>About me</legend>
+    <p>Email: 
+      <a href="mailto:johnmay0629@gmail.com">
+        johnmay0629@gmail.com
+      </a>
+    </p>
+    <p>Flickr: 
+      <a href="https://www.flickr.com/photos/johnmay0629" target="_blank">
+        https://www.flickr.com/photos/johnmay0629
+      </a>
+    </p>
+    <p>Facebook: 
+      <a href="https://www.facebook.com/johnmay0629" target="_blank">
+        https://www.facebook.com/johnmay0629
+      </a>
+    </p>
+  </fieldset>
+{% endblock main_content %}

@@ -1,0 +1,38 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Robert Hung-Wei Chiang">
+    <title>{% block title %}Robert Hung-Wei Chiang{% endblock title %}</title>
+
+    <!-- Bootstrap -->
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- base css file -->
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+
+    <!-- custom css files block -->
+    {% block custom_css %}{% endblock custom_css %}
+  </head>
+  <body>
+    <!-- header -->
+    {% include "base/header.html" %}
+
+    <!-- main content -->
+    <div class="container" id="main_content">
+      {% block main_content %}{% endblock %}
+    </div>
+
+    <!-- jQuery -->
+    <script src="{% static 'jquery/jquery.min.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <!-- base js file -->
+    <script src="{% static 'js/base.js' %}"></script>
+    <!-- custom js files block -->
+    {% block custom_js %}{% endblock custom_js %}
+  </body>
+</html>

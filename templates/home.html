@@ -1,0 +1,23 @@
+{% extends "base/base.html" %}
+{% load staticfiles %}
+
+{% block custom_css %}
+  <link href="{% static 'css/home.css' %}" rel="stylesheet">
+{% endblock custom_css %}
+
+{% block custom_js %}
+   <script src="{% static 'js/home.js' %}"></script>
+{% endblock custom_js %}
+
+{% block main_content %}
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>Hello</h1>
+          <p>Welcome to my website :)</p>
+        </div>
+      </div> <!-- row -->
+    </div> <!-- container  -->
+  </div> <!-- jumbotron -->
+{% endblock main_content %}

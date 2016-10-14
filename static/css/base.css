@@ -1,0 +1,26 @@
+body {
+  /* background image is downloaded from http://subtlepatterns.com/halftone/ */
+  background: url('../../static/img/background.png');
+}
+
+/* header navbar */
+.navbar-brand {
+  font-family: "Great Vibes", cursive;
+  color: #337ab7 !important;
+  font-weight: bold;
+  text-shadow: 0 3px 3px #d8d8d8;
+}
+div#main_content {
+  margin-top: 50px;
+}
+li.active > a {
+  font-weight: bold;
+}
+
+/* basic HTML element custom style for my website */
+fieldset {
+  margin-top: 30px;
+}
+legend {
+  border-bottom: 5px solid #D8D8D8;
+}
