@@ -21,7 +21,10 @@
     <!-- header -->
     {% include "base/header.html" %}
 
-    <!-- main content -->
+    <!-- jumbotron block -->
+    {% block jumbotron %}{% endblock jumbotron %}
+
+    <!-- main content block -->
     <div class="container" id="main_content">
       {% block main_content %}{% endblock %}
     </div>

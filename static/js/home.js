@@ -1,3 +1,3 @@
 $(function(){
-    $('div#main_content').removeClass('container');
+    // $('div#main_content').removeClass('container');
 })
