@@ -28,4 +28,7 @@ urlpatterns = [
 
     # about
     url(r'^about/$', header_views.about, name='about'),
+
+    # resume
+    url(r'^resume/$', header_views.resume, name='resume')
 ]
