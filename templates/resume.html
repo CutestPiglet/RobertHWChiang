@@ -2,12 +2,88 @@
 {% load staticfiles %}
 
 {% block custom_css %}
-  <link href="{% static 'css/about.css' %}" rel="stylesheet">
+  <link href="{% static 'css/resume.css' %}" rel="stylesheet">
 {% endblock custom_css %}
 
 {% block custom_js %}
-  <script src="{% static "js/about.js" %}"></script>
+  <script src="{% static "js/resume.js" %}"></script>
 {% endblock custom_js %}
 
 {% block main_content %}
+  <!-- work experience -->
+  <fieldset>
+    <legend>Work Expererience</legend>
+    <div class="row">
+
+      <div class="col-md-4 company">
+        <h4>Gemini Open Cloud</h4>
+        <p>Sep. 2015 – Present</p>
+      </div>
+      <div class="col-md-8 work_content">
+        <h4>Full-Time Senior Engineer</h4>
+        <p>Developed GOC (Gemini Open Cloud) Service Portal website using Django</p>
+        <p>Developed Hadoop Solution based on Openstack Sahara project</p>
+        <p>Developed Storage Solution based on Openstack Swift Object Storage</p>
+        <p>Developed WiSE Solution which provides service users to compile C++ source code files and execute compiled execution files</p>
+        <p>Owner of GOC Solution team’s GitHub repository</p>
+        <p>Maintained NxWitness, MSOffice and OpenEMM Solutions</p>
+        <hr class="visible-xs">
+      </div>
+
+      <hr class="hidden-xs">
+      <div class="col-md-4 company">
+        <h4>Yang Ming Marine Transport Corporation</h4>
+        <p>July. 2013 – Aug. 2015</p>
+      </div>
+      <div class="col-md-8 work_content">
+        <h4>Full-Time Software Engineer</h4>
+        <p>Developed ASP.NET template project</p>
+        <p>Taught colleagues to develop ASP.NET projects</p>
+        <p>Enhanced and maintained internal systems</p>
+        <hr class="visible-xs">
+      </div>
+
+      <hr class="hidden-xs">
+      <div class="col-md-4 company">
+        <h4>Leverage Information Corporation</h4>
+        <p>Apr. 2013 – Jun. 2013</p>
+      </div>
+      <div class="col-md-8 work_content">
+        <h4>Full-Time Software Engineer</h4>
+        <p>Developed E-Learning website using ASP.NET MVC</p>
+        <hr class="visible-xs">
+      </div>
+
+      <hr class="hidden-xs">
+      <div class="col-md-4 company">
+        <h4>Ming Chuan University, Dept of CSIE</h4>
+        <p>Sep. 2009 – Jun. 2010</p>
+      </div>
+      <div class="col-md-8 work_content">
+        <h4>Part-Time Data Structure and Algorithm Teaching Assistant</h4>
+        <p>Assisted the professor with grades and tests proctoring</p>
+        <p>Helped students to solve problems for practicing coding</p>
+        <p>Built and maintained website for providing PowerCam files and sample codes, announcing grades, assigning homework</p>
+        <hr class="visible-xs">
+      </div>
+
+      <hr class="hidden-xs">
+      <div class="col-md-4 company">
+        <h4>Ming Chuan University, Dept of CSIE</h4>
+        <p>Feb. 2009 – Jun. 2009</p>
+      </div>
+      <div class="col-md-8 work_content">
+        <h4>Part-Time Software Engineer</h4>
+        <p>Developed On-line Data Mining Classification System using ASP.NET</p>
+        <hr class="visible-xs">
+      </div>
+
+    </div> <!-- row -->
+  </fieldset>
+
+  <!-- education -->
+  <fieldset>
+    <legend>Education</legend>
+  </fieldset>
+
 {% endblock main_content %}

@@ -1,0 +1,17 @@
+h3 {
+  font-size: 22px;
+  margin: 5px 0 15px;
+}
+
+p {
+  color: #848484;
+}
+
+hr {
+  border-top: 2px solid #d8d8d8;
+  width: 100%;
+}
+
+i {
+  margin-right: 5px;
+}
