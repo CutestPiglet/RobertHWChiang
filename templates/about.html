@@ -1,42 +1,63 @@
 {% extends "base/base.html" %}
 {% load staticfiles %}
 
+{% block custom_css %}
+  <link href="{% static 'css/about.css' %}" rel="stylesheet">
+{% endblock custom_css %}
+
 {% block custom_js %}
   <script src="{% static "js/about.js" %}"></script>
 {% endblock custom_js %}
 
 {% block main_content %}
-  <fieldset>
-    <legend>About this website</legend>
-    <p>Developed on Ubuntu 14.04</p>
-    <p>Wrote by Django 1.8.11</p>
-    <p>Host on 
-      <a href="https://www.heroku.com/" target="_blank">
-        Heroku
-      </a>
-    </p>
-    <p>Find source code on 
-      <a href="https://github.com/RobertH-W-Chiang/RobertHWChiang" target="_blank">
-        my GitHub repository
-      </a>
-    </p>
-  </fieldset>
-  <fieldset>
-    <legend>About me</legend>
-    <p>Email: 
-      <a href="mailto:johnmay0629@gmail.com">
-        johnmay0629@gmail.com
-      </a>
-    </p>
-    <p>Flickr: 
-      <a href="https://www.flickr.com/photos/johnmay0629" target="_blank">
-        https://www.flickr.com/photos/johnmay0629
-      </a>
-    </p>
-    <p>Facebook: 
-      <a href="https://www.facebook.com/johnmay0629" target="_blank">
-        https://www.facebook.com/johnmay0629
-      </a>
-    </p>
-  </fieldset>
+  <div class="row">
+    <!-- about this site -->
+    <div class="col-md-6">
+      <div class="box">
+        <div class="box-heading">
+          <img src="{% static "img/about/site.jpg" %}">
+        </div>
+        <div class="box-body">
+          <h3>About This Site</h3>
+          <p>Wrote by Django {{ django_version }}</p>
+          <p>Host on 
+            <a href="https://www.heroku.com/" target="_blank">Heroku</a>
+          </p>
+          <p>Developed on Ubuntu 14.04</p>
+          <p>Find source code on 
+            <a href="https://github.com/RobertH-W-Chiang/RobertHWChiang" target="_blank">
+              my GitHub repository
+            </a>
+          </p>
+        </div>
+      </div> <!-- box -->
+    </div> <!-- col -->
+
+    <!-- about me -->
+    <div class="col-md-6">
+      <div class="box">
+        <div class="box-heading">
+          <img src="{% static "img/about/me.jpg" %}">
+        </div>
+        <div class="box-body">
+          <h3>About Me</h3>
+          <p>Email:
+            <a href="mailto:johnmay0629@gmail.com">
+              johnmay0629@gmail.com
+            </a>
+          </p>
+          <p>Flickr:
+            <a href="https://www.flickr.com/photos/johnmay0629" target="_blank">
+              https://www.flickr.com/photos/johnmay0629
+            </a>
+          </p>
+          <p>Facebook:
+            <a href="https://www.facebook.com/johnmay0629" target="_blank">
+              https://www.facebook.com/johnmay0629
+            </a>
+          </p>
+        </div>
+      </div> <!-- box -->
+    </div> <!-- col -->
+  </div> <!-- row -->
 {% endblock main_content %}

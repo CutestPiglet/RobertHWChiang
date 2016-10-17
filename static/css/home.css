@@ -24,3 +24,9 @@ body {
   padding-top: 55px;
   overflow: auto;
 }
+
+@media (max-width: 568px) {
+  .jumbotron {
+    text-align: center;
+  }
+}
