@@ -5,6 +5,7 @@ h4 {
 p {
   color: #848484;
   font-family: 'Book Antiqua';
+  margin: 10px 0 10px 0;
 }
 
 hr {
@@ -29,4 +30,13 @@ legend {
   font-weight: 500;
   line-height: 26.4px;
   color: #e44424;
+}
+
+img {
+  height: 50%;
+  width: 50%;
+}
+
+div.pub_img_col {
+  text-align: center;
 }
