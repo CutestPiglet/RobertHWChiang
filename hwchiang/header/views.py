@@ -10,3 +10,7 @@ def about(request):
 
 def resume(request):
     return render(request, 'resume.html')
+
+
+def interests(request):
+    return render(request, 'interests.html')

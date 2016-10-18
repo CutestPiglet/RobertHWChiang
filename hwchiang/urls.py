@@ -30,5 +30,8 @@ urlpatterns = [
     url(r'^about/$', header_views.about, name='about'),
 
     # resume
-    url(r'^resume/$', header_views.resume, name='resume')
+    url(r'^resume/$', header_views.resume, name='resume'),
+
+    # interests
+    url(r'^interests/$', header_views.interests, name='interests')
 ]
