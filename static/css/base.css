@@ -16,11 +16,3 @@ div#main_content {
 li.active > a {
   font-weight: bold;
 }
-
-/* basic HTML element custom style for my website */
-fieldset {
-  margin-top: 30px;
-}
-legend {
-  border-bottom: 5px solid #D8D8D8;
-}

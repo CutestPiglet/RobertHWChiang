@@ -1,10 +1,10 @@
-h3 {
-  font-size: 22px;
-  margin: 5px 0 15px;
+h4 {
+  font-family: 'Gill Sans';
 }
 
 p {
   color: #848484;
+  font-family: 'Book Antiqua';
 }
 
 hr {
@@ -14,4 +14,19 @@ hr {
 
 i {
   margin-right: 5px;
+}
+
+fieldset {
+  margin-top: 30px;
+}
+
+legend {
+  border-bottom: 5px solid #f5c4bb;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  color: #e44424;
 }
