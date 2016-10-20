@@ -16,3 +16,33 @@ div#main_content {
 li.active > a {
   font-weight: bold;
 }
+
+/* basic HTML element custom style  */
+fieldset {
+  margin-top: 30px;
+}
+legend {
+  border-bottom: 5px solid #f5c4bb;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  color: #e44424;
+}
+h4 {
+  font-family: 'Gill Sans';
+}
+p {
+  color: #848484;
+  font-family: 'Book Antiqua';
+  margin: 10px 0 10px 0;
+}
+hr {
+  border-top: 2px solid #d8d8d8;
+  width: 100%;
+}
+i {
+  margin-right: 5px;
+}
