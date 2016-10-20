@@ -2,10 +2,39 @@
 {% load staticfiles %}
 
 {% block custom_css %}
+  <link href="{% static 'css/interests.css' %}" rel="stylesheet">
 {% endblock custom_css %}
 
 {% block custom_js %}
 {% endblock custom_js %}
 
 {% block main_content %}
+  <!-- photography -->
+  <fieldset>
+    <legend>Photography</legend>
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Camera:</h4>
+        <p>Nikon D750</p>
+        <h4>Camera Lens:</h4>
+        <p>Nikon AF-S NIKKOR 35mm f1.8G ED</p>
+        <p>Nikon AF-S 18-35mm f/3.5-4.5G ED</p>
+        <p>TAMRON SP 90mm F/2.8 Di MACRO 1:1 VC USD (F004)</p>
+        <p>TAMRON SP 70-300mm F/4-5.6 Di VC USD (A005)</p>
+      </div>
+    </div>
+
+    <div class="row">
+      {% for photo in photos %}
+        <div class="col-md-4">
+          <a href="{{ photo }}" class="thumbnail" target="_blank">
+            <img src="{{ photo }}">
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  
+  
 {% endblock main_content %}
