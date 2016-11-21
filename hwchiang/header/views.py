@@ -39,6 +39,11 @@ def about(request):
         'a_href': 'mailto:johnmay0629@gmail.com'
     })
     contents.append({
+        'p_text': 'Blogger',
+        'a_text': 'http://roberthwchiang.blogspot.tw',
+        'a_href': 'http://roberthwchiang.blogspot.tw'
+    })
+    contents.append({
         'p_text': 'Flickr:',
         'a_text': 'https://www.flickr.com/photos/johnmay0629',
         'a_href': 'https://www.flickr.com/photos/johnmay0629'
@@ -47,11 +52,6 @@ def about(request):
         'p_text': 'Youtube:',
         'a_text': 'https://www.youtube.com/user/johnmay0629',
         'a_href': 'https://www.youtube.com/user/johnmay0629/videos'
-    })
-    contents.append({
-        'p_text': 'Facebook:',
-        'a_text': 'https://www.facebook.com/johnmay0629',
-        'a_href': 'https://www.facebook.com/johnmay0629'
     })
     boxes.append({
         'heading_img_url': 'img/about/me.jpg',
