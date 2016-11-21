@@ -1,48 +1,48 @@
 body {
-  /* background image is downloaded from http://subtlepatterns.com/halftone/ */
-  background: url('../../static/img/background.png');
+    /* background image is downloaded from http://subtlepatterns.com/halftone/ */
+    background: url("../../static/img/background.png");
 }
 
 /* header navbar */
 .navbar-brand {
-  font-family: "Great Vibes", cursive;
-  color: #337ab7 !important;
-  font-weight: bold;
-  text-shadow: 0 3px 3px #d8d8d8;
+    font-family: "Great Vibes", cursive;
+    color: #337ab7 !important;
+    font-weight: bold;
+    text-shadow: 0 3px 3px #d8d8d8;
 }
 div#main_content {
-  margin-top: 50px;
+    margin-top: 50px;
 }
-li.active > a {
-  font-weight: bold;
+li.active>a {
+    font-weight: bold;
 }
 
 /* basic HTML element custom style  */
 fieldset {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 legend {
-  border-bottom: 5px solid #f5c4bb;
-  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-  font-size: 24px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 26.4px;
-  color: #e44424;
+    border-bottom: 5px solid #f5c4bb;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+    color: #e44424;
 }
 h4 {
-  font-family: 'Gill Sans';
+    font-family: "Gill Sans";
 }
 p {
-  color: #848484;
-  font-family: 'Book Antiqua';
-  margin: 10px 0 10px 0;
+    color: #848484;
+    font-family: "Book Antiqua";
+    margin: 10px 0 10px 0;
 }
 hr {
-  border-top: 2px solid #d8d8d8;
-  width: 100%;
+    border-top: 2px solid #d8d8d8;
+    width: 100%;
 }
 i {
-  margin-right: 5px;
+    margin-right: 5px;
 }
