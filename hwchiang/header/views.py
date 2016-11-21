@@ -39,7 +39,7 @@ def about(request):
         'a_href': 'mailto:johnmay0629@gmail.com'
     })
     contents.append({
-        'p_text': 'Blogger',
+        'p_text': 'Blogger:',
         'a_text': 'http://roberthwchiang.blogspot.tw',
         'a_href': 'http://roberthwchiang.blogspot.tw'
     })
