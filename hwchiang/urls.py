@@ -13,9 +13,8 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-# from django.conf.urls import include, url
-# from django.contrib import admin
-from django.conf.urls import url
+from django.conf.urls import include, url
+from django.contrib import admin
 from hwchiang import views as home_views
 # from hwchiang.header import views as header_views
 from hwchiang.about import views as about_views
@@ -24,7 +23,7 @@ from hwchiang.interests import views as interests_views
 
 urlpatterns = [
     # disable django default administration page
-    # url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', include(admin.site.urls)),
 
     # index
     url(r'^$', home_views.home, name='home'),

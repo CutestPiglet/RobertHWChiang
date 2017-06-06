@@ -1,10 +1,14 @@
 # -*- coding: utf-8 -*-
 
 from django.shortcuts import render
+from .models import Photo, Ukulele, Guitar
 
 
 def interests(request):
     # < photography >
+    photos = [photo_obj.url for photo_obj in Photo.objects.all()]
+
+    """
     photos = [
         'https://c4.staticflickr.com/8/7457/27001286083_555761a5b2_k.jpg',
         'https://c7.staticflickr.com/8/7548/27511001622_e282be32cf_k.jpg',
@@ -27,32 +31,23 @@ def interests(request):
         'https://c8.staticflickr.com/9/8618/16026663127_5203149889_k.jpg',
         'https://c5.staticflickr.com/8/7575/16025132820_7a254a0a4f_k.jpg',
         'https://c7.staticflickr.com/8/7569/15590078734_8d3db1c2db_k.jpg']
+    """
 
     # < ukulele >
     ukuleles = []
-    ukuleles.append({
-        'title': 'How to Play Jason Mraz - I\'m Yours on Ukulele',
-        'video_url': 'https://www.youtube.com/embed/POFF0vHpBgw?rel=0'
-    })
-    ukuleles.append({
-        'title': '梁靜茹 -  小手拉大手',
-        'video_url': 'https://www.youtube.com/embed/l6x-_MJE5kY?rel=0'
-    })
+    for ukulele_obj in Ukulele.objects.all():
+        ukuleles.append({
+            'title': ukulele_obj.title,
+            'video_url': ukulele_obj.url,
+        })
 
     # < guitar >
     guitars = []
-    guitars.append({
-        'title': 'How to Play Kina Grannis - Valentine on Guitar',
-        'video_url': 'https://www.youtube.com/embed/x-Me2BJS4N4?rel=0'
-    })
-    guitars.append({
-        'title': 'Canon (finger style)',
-        'video_url': 'https://www.youtube.com/embed/JlOI0g2nr5M?rel=0'
-    })
-    guitars.append({
-        'title': 'My Heart Will Go On (finger style)',
-        'video_url': 'https://www.youtube.com/embed/zkV3Yrjer0k?rel=0'
-    })
+    for guitar_obj in Guitar.objects.all():
+        guitars.append({
+            'title': guitar_obj.title,
+            'video_url': guitar_obj.url,
+        })
 
     return render(request,
                   'interests.html',
