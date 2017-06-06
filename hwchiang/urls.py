@@ -16,13 +16,11 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from hwchiang import views as home_views
-# from hwchiang.header import views as header_views
 from hwchiang.about import views as about_views
 from hwchiang.resume import views as resume_views
 from hwchiang.interests import views as interests_views
 
 urlpatterns = [
-    # disable django default administration page
     url(r'^admin/', include(admin.site.urls)),
 
     # index
