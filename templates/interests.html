@@ -28,8 +28,11 @@
       {% for photo in photos %}
         <div class="col-md-4">
           <div class="thumbnail">
-            <a href="{{ photo }}" target="_blank">
-              <img src="{{ photo }}">
+            <a href="{{ photo.url }}" target="_blank">
+              <img src="{{ photo.url }}">
+              <div class="caption">
+                <p>{{ photo.caption }}</p>
+              </div>
             </a>
           </div>
         </div>

@@ -38,7 +38,7 @@ def about(request):
             'a_text': aboutme_obj.hyperlink_text,
             'a_href': aboutme_obj.hyperlink_url,
         })
-    
+
     boxes.append({
         'heading_img_url': 'img/about/me.jpg',
         'title': 'About Me',

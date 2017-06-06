@@ -6,7 +6,12 @@ from .models import Photo, Ukulele, Guitar
 
 def interests(request):
     # < photography >
-    photos = [photo_obj.url for photo_obj in Photo.objects.all()]
+    photos = []
+    for photo_obj in Photo.objects.all():
+        photos.append({
+            'url': photo_obj.url,
+            'caption': photo_obj.caption,
+        })
 
     # < ukulele >
     ukuleles = []
