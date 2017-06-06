@@ -17,7 +17,10 @@ Including another URLconf
 # from django.contrib import admin
 from django.conf.urls import url
 from hwchiang import views as home_views
-from hwchiang.header import views as header_views
+# from hwchiang.header import views as header_views
+from hwchiang.about import views as about_views
+from hwchiang.resume import views as resume_views
+from hwchiang.interests import views as interests_views
 
 urlpatterns = [
     # disable django default administration page
@@ -27,11 +30,11 @@ urlpatterns = [
     url(r'^$', home_views.home, name='home'),
 
     # about
-    url(r'^about/$', header_views.about, name='about'),
+    url(r'^about/$', about_views.about, name='about'),
 
     # resume
-    url(r'^resume/$', header_views.resume, name='resume'),
+    url(r'^resume/$', resume_views.resume, name='resume'),
 
     # interests
-    url(r'^interests/$', header_views.interests, name='interests')
+    url(r'^interests/$', interests_views.interests, name='interests')
 ]
