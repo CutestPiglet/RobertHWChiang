@@ -1,5 +1,6 @@
 import django
 from django.shortcuts import render
+from .models import AboutMe
 
 
 def about(request):
@@ -31,26 +32,13 @@ def about(request):
 
     # < about me >
     contents = []
-    contents.append({
-        'p_text': 'Email:',
-        'a_text': 'johnmay0629@gmail.com',
-        'a_href': 'mailto:johnmay0629@gmail.com'
-    })
-    contents.append({
-        'p_text': 'Blogger:',
-        'a_text': 'http://roberthwchiang.blogspot.tw',
-        'a_href': 'http://roberthwchiang.blogspot.tw'
-    })
-    contents.append({
-        'p_text': 'Flickr:',
-        'a_text': 'https://www.flickr.com/photos/johnmay0629',
-        'a_href': 'https://www.flickr.com/photos/johnmay0629'
-    })
-    contents.append({
-        'p_text': 'Youtube:',
-        'a_text': 'https://www.youtube.com/user/johnmay0629',
-        'a_href': 'https://www.youtube.com/user/johnmay0629/videos'
-    })
+    for aboutme_obj in AboutMe.objects.all():
+        contents.append({
+            'p_text': aboutme_obj.text,
+            'a_text': aboutme_obj.hyperlink_text,
+            'a_href': aboutme_obj.hyperlink_url,
+        })
+    
     boxes.append({
         'heading_img_url': 'img/about/me.jpg',
         'title': 'About Me',
