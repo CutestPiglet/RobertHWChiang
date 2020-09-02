@@ -17,7 +17,7 @@ def about(request):
         'a_href': 'https://www.heroku.com/'
     })
     contents.append({
-        'p_text': 'Developed on Ubuntu 14.04'
+        'p_text': 'Developed on Ubuntu 18.04'
     })
     contents.append({
         'p_text': 'Find source code on',
